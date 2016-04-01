@@ -1,4 +1,4 @@
-from resteve.server import EveRestServer
+from server import EveRestServer
 
 REST_SCHEMA = {
     'login': '/accounts/actions/login/',

@@ -1,5 +1,5 @@
-from resteve.server import EveRestServer
-from resteve.eveapi import EveServer
+from server import EveRestServer
+from eveapi import EveServer
 
 API_ADDRESS = '192.168.110.60'
 API_PORT = '2305'
@@ -14,6 +14,8 @@ def evecli():
 
     result = server.logout()
     print "Logging out... Server returneed: " + str (result.status_code) + "\n"
+
+    print "All done"
 
 if __name__ == '__main__':
     evecli()
